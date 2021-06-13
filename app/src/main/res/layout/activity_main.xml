@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".MainActivity">
+    
+    <TextView
+        android:id="@+id/textIsim"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="SendApp"
+        android:textSize="32sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="140dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"></TextView>
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Anonim mesajlaş.SendApp ile sınırsız chat'le."
+        android:gravity="center"
+        android:textSize="23sp"
+        android:textColor="#000"
+        android:textStyle="italic"
+        android:layout_below="@id/textIsim"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"></TextView>
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonbackground"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="Devam Et"
+        android:id="@+id/buttonMain"></Button>
+
+
+
+</RelativeLayout>

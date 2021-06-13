@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADE0CD"
+    tools:context=".KullaniciBilgiActivity">
+
+    <TextView
+        android:id="@+id/textProfilBilgi"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Profil Bilgilerini Doldur"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"></TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageYukle"
+        android:onClick="resimSecClick"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#000"
+        android:src="@drawable/selectedphoto"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textProfilBilgi"
+        android:layout_marginTop="30dp"></de.hdodenhof.circleimageview.CircleImageView>
+    <EditText
+        android:id="@+id/editTextHakk"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:maxLength="50"
+        android:textStyle="italic"
+        android:textSize="17sp"
+        android:textColor="#000"
+        android:hint="Hakkında Bilgi Gir..."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageYukle"
+        android:layout_marginTop="40dp"></EditText>
+    <Button
+        android:id="@+id/buttonBilgi"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttonbackground"
+        android:onClick="buttonProfilBilgiClick"
+        android:text="Kaydet"
+        android:layout_below="@id/editTextHakk"
+        android:layout_centerHorizontal="true"
+        ></Button>
+
+
+
+
+</RelativeLayout>

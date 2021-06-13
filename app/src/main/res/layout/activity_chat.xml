@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <LinearLayout
+        android:background="#FF6E5C"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ust">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/backicon"
+            android:layout_gravity="center"
+            android:id="@+id/imageBack"></ImageView>
+
+        <TextView
+            android:id="@+id/textUser"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:height="6dp"
+            android:textSize="20sp"
+            android:textColor="#000"></TextView>
+
+
+
+
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ust"
+        android:scrollbars="none"
+        android:layout_above="@id/alt"
+        android:id="@+id/recylerViewChat"></androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:background="#FF6E5C"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/alt">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:hint="Mesaj Yazınız..."
+            android:id="@+id/editTextMesaj"></EditText>
+
+        <ImageView
+            android:layout_marginLeft="25dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/imageSend"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/send"
+            android:height="6dp"
+            android:textSize="20sp"
+            android:textColor="#000"></ImageView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

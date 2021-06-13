@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/chatSayfa"
+        android:title="Mesajlar"
+        android:icon="@drawable/chat"></item>
+    <item android:id="@+id/profilSayfa"
+        android:title="Profil"
+        android:icon="@drawable/profil"></item>
+
+</menu>

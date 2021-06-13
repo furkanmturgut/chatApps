@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".GirisYapActivity">
+
+    <TextView
+        android:id="@+id/textIsimKayitGiris"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="SendApp"
+        android:textSize="32sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="140dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        android:id="@+id/cardViewGiris"
+        app:cardCornerRadius="17dp"
+        android:background="#FFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Giriş YAP"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:gravity="center"></TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/editTextMailGiris"
+                    android:inputType="textEmailAddress"
+                    android:hint="Mail Giriniz"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="20dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/editTextSifreGiris"
+                    android:inputType="textPassword"
+                    android:hint="Şifrenizi Giriniz"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonGiris"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonbackground"
+                android:onClick="buttonGirisClick"
+                android:text="Devam Et"></Button>
+            <TextView
+                android:id="@+id/textHesabimYok"
+                android:layout_width="230dp"
+                android:layout_height="30dp"
+                android:textStyle="normal"
+                android:textSize="17sp"
+                android:textColor="#FF6E5C"
+                android:text="Hesabın yok mu ? Kayıt OL"
+                android:gravity="center"
+                android:layout_gravity="center"></TextView>
+
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

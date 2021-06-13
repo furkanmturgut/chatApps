@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#BE8AC6"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="Hakkındayı Düzenleyin."
+        android:id="@+id/hakkindaEdit"></EditText>
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonbackground"
+        android:id="@+id/buttonPopupEdit"
+        android:text="Düzenle"
+        android:layout_gravity="center"></Button>
+
+</LinearLayout>
